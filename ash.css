@@ -1,0 +1,95 @@
+body{
+background-image:url("rep.jpg");
+background-size: cover;
+}
+.set{
+    display:flex;
+    align-items: left;
+    justify-content: left;
+}
+img{
+    display:flex;
+    margin: auto;
+    justify-content:center;
+    height:200px;
+    width: 200px;
+    border: 10px solid burlywood;
+    border-radius: 50%;
+    cursor: pointer; /* Add pointer cursor to indicate clickable */
+    animation: pulse 1s infinite alternate; /* Animation for border pulse */
+}
+.img {
+    transition: transform 0.5s ease-in-out;
+}
+.img.clicked {
+    transform: rotate(90deg);
+}
+.imgset{
+    display: flex;
+            align-items: center;
+}
+#pre{
+        white-space: pre-wrap;
+        font-size:20px;
+        color:whitesmoke;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+p{
+    font-size:20px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family:'Times New Roman', Times, serif;
+    color:cornsilk;
+}
+
+@keyframes pulse {
+    0% {
+        border: 10px solid PaleTurquoise;
+        transform: scale(1);
+    }
+    10% {
+        border: 10px solid MediumOrchid;
+        transform: scale(1.1);
+    }
+    20% {
+        border: 10px solid MediumSpringGreen;
+        transform: scale(1.2);
+    }
+    30% {
+        border: 15px solid LightSalmon;
+        transform: scale(1.3);
+    }
+    40% {
+        border: 10px solid CornflowerBlue;
+        transform: scale(1.4);
+    }
+    50% {
+        border: 15px solid LightCoral;
+        transform: scale(1.5);
+    }
+    60% {
+        border: 10px solid MediumAquamarine;
+        transform: scale(1.4);
+    }
+    70% {
+        border: 15px solid LightSteelBlue;
+        transform: scale(1.3);
+    }
+    80% {
+        border: 0px solid MediumVioletRed;
+        transform: scale(1.2);
+    }
+    90% {
+        border: 15px solid LightGreen;
+        transform: scale(1.1);
+    }
+    100% {
+        border: 10px solid LightSkyBlue;
+        transform: scale(1);
+    }
+}
+
+
+.waveforms{
+    animation: pulse 1s infinite alternate ease-in-out;
+}
